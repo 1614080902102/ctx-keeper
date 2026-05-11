@@ -1,0 +1,32 @@
+{
+  "name": "ctx-keeper",
+  "displayName": "ctx-keeper",
+  "description": "Codex profile switcher for VSCode",
+  "version": "0.1.0",
+  "publisher": "ctx-keeper",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ctx-keeper.switchProfile",
+        "title": "ctx-keeper: Switch Codex Profile"
+      },
+      {
+        "command": "ctx-keeper.showStats",
+        "title": "ctx-keeper: Show Stats"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.3.0"
+  }
+}

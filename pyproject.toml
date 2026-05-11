@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ctx-keeper"
+version = "0.1.0"
+description = "Local AI agent conversation context manager for Codex + Claude Code"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = [
+    "rich>=13.0",
+]
+
+[project.scripts]
+ctx = "ctx_keeper.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ctx_keeper"]
