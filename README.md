@@ -42,7 +42,7 @@ vsce package --no-dependencies
 code --install-extension ctx-keeper-0.1.0.vsix
 ```
 
-Reload Window 后状态栏出现 `⊙ <profile>  <今日用量>` 即为成功。详见 [docs/20260511-install.md](docs/20260511-install.md)。
+Reload Window 后状态栏出现 `⊙ <profile>  <今日用量>` 即为成功。
 
 ## 用法
 
